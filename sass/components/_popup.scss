@@ -28,11 +28,19 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond (phone){
+            width: 90%;
+        }
     }
 
     &__left{
         width: 33.33333%;
         display: table-cell;
+
+        @include respond (phone){
+            display: none;
+        }
     }
 
     &__right{
